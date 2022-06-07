@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "6+mjUBDHjAZdG8Kb8ErYpjv7JJqxL9aq1vxA87XsOtO0L9M+8z0+xLaddkneVMNBb9FUgwhzCGtPB/gqb+XAlA==",
+  "success": true,
+  "projectFilePath": "E:\\AWS\\ProyectoAWS\\ProyectoAWS\\ProyectoAWS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Zente\\.nuget\\packages\\awssdk.core\\3.7.11.11\\awssdk.core.3.7.11.11.nupkg.sha512",
+    "C:\\Users\\Zente\\.nuget\\packages\\awssdk.dynamodbv2\\3.7.3.43\\awssdk.dynamodbv2.3.7.3.43.nupkg.sha512",
+    "C:\\Users\\Zente\\.nuget\\packages\\awssdk.extensions.netcore.setup\\3.7.2\\awssdk.extensions.netcore.setup.3.7.2.nupkg.sha512",
+    "C:\\Users\\Zente\\.nuget\\packages\\awssdk.s3\\3.7.9.11\\awssdk.s3.3.7.9.11.nupkg.sha512",
+    "C:\\Users\\Zente\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Zente\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\2.0.0\\microsoft.extensions.configuration.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\Zente\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.0.0\\microsoft.extensions.dependencyinjection.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\Zente\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
+    "C:\\Users\\Zente\\.nuget\\packages\\microsoft.extensions.primitives\\2.0.0\\microsoft.extensions.primitives.2.0.0.nupkg.sha512",
+    "C:\\Users\\Zente\\.nuget\\packages\\microsoft.identitymodel.abstractions\\6.18.0\\microsoft.identitymodel.abstractions.6.18.0.nupkg.sha512",
+    "C:\\Users\\Zente\\.nuget\\packages\\microsoft.identitymodel.logging\\6.18.0\\microsoft.identitymodel.logging.6.18.0.nupkg.sha512",
+    "C:\\Users\\Zente\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.18.0\\microsoft.identitymodel.tokens.6.18.0.nupkg.sha512",
+    "C:\\Users\\Zente\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.4.0\\system.runtime.compilerservices.unsafe.4.4.0.nupkg.sha512",
+    "C:\\Users\\Zente\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

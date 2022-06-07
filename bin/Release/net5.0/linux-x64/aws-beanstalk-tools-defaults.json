@@ -1,0 +1,20 @@
+
+{
+    "region" : "us-east-1",
+    "configuration" : "Release",
+    "framework"     : "net5.0",
+    "self-contained" : false,
+    "application"    : "ProyectoAWS",
+    "environment"    : "ProyectoAWS-dev",
+    "enable-xray"    : false,
+    "enhanced-health-type" : "basic",
+    "additional-options"   : "\"aws:autoscaling:launchconfiguration,SecurityGroups\"=\"sg-036525672a7c40d49\";\"aws:ec2:vpc,Subnets\"=\"subnet-0e9361a1de68ac7f8\"",
+    "proxy-server"         : "nginx",
+    "solution-stack"       : "64bit Amazon Linux 2 v2.3.2 running .NET Core",
+    "environment-type"     : "SingleInstance",
+    "cname"                : "proyectoaws",
+    "instance-type"        : "t2.micro",
+    "key-pair"             : "",
+    "instance-profile"     : "aws-elasticbeanstalk-ec2-role",
+    "service-role"         : "aws-elasticbeanstalk-service-role"
+}

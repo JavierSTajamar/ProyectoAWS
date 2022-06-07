@@ -1,0 +1,84 @@
+﻿@model Usuario
+
+@{ ViewData["Title"] = "Update";
+    List<Foto> fotos = ViewData["FOTO"] as List<Foto>; }
+
+
+<h4>Usuario</h4>
+<hr />
+<div class="row">
+    <div>
+        <form method="POST" enctype="multipart/form-data" asp-action="Update">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="IdUsuario" class="control-label"></label>
+                <input asp-for="IdUsuario" class="form-control" readonly/>
+                <span asp-validation-for="IdUsuario" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nombre" class="control-label"></label>
+                <input asp-for="Nombre" class="form-control" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descripcion" class="control-label"></label>
+                <input asp-for="Descripcion" class="form-control" />
+                <span asp-validation-for="Descripcion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="fechaalta" class="control-label"></label>
+                <input asp-for="fechaalta" class="form-control" readonly/>
+                <span asp-validation-for="fechaalta" class="text-danger"></span>
+            </div>
+            <div>
+                <div class="container w-100 text-center ">
+
+                    <h3>Fotos</h3>
+                    @if (fotos != null)
+                    {
+                <div class="row">
+                    @foreach (Foto foto in fotos)
+                    {
+                <div class="col col-md-4">
+                    <div class="card">
+                        <div class="card-title">@foto.Titulo</div>
+                        <img src="https://bucketproyaws.s3.amazonaws.com/@foto.Imagen" class="card-img " />
+
+                        <button asp-route-id="@Model.IdUsuario" asp-route-imagen="@foto.Imagen" asp-action="DeleteImage" class="btn btn-danger align-bottom ">Borrar</button>
+                    </div>
+                </div>}
+                </div>
+                    }
+                    else
+                    {
+                    <p>El usuario no tiene fotos</p>
+                    }
+
+                </div>
+                                </div>
+
+
+
+            <div>
+                <label>Titulo</label>
+                <input type="text" name="titulo"  class="form-control">
+            </div>
+            <div>
+                <label>Imagenes</label>
+                <input type="file" name="files" accept="image/*" multiple class="form-control" />
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-info">Volver a la Lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,58 @@
+﻿@model ProyectoAWS.Models.Usuario
+
+@{ ViewData["Title"] = "Details"; }
+
+
+<div>
+    <h4>Usuario</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdUsuario)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdUsuario)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Descripcion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.fechaalta)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.fechaalta)
+        </dd>
+    </dl>
+</div>
+<div>
+    <div class="container w-100 text-center">
+
+
+        @if (Model.Fotos.Count != 0)
+        {
+@foreach (Foto foto in Model.Fotos)
+{
+<div class="card">
+    <div class="card-title">@foto.Titulo</div>
+    <img src="https://bucketproyaws.s3.amazonaws.com/@foto.Imagen" class="card-img" />
+
+</div><br />} }
+else
+{
+<p>El usuario no tiene fotos</p>}
+
+    </div>
+</div>
+<div>
+    @Html.ActionLink("Actualizar", "Update", new { id = Model.IdUsuario }, new { @class = "btn btn-warning" }) 
+    <a asp-action="Index" class="btn btn-info">Volver a la Lista</a>
+</div>
